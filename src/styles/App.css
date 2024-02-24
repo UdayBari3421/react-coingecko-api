@@ -57,17 +57,20 @@ tr td:nth-child(2) {
 }
 
 .app-sub {
-  height: 100vh;
   margin: auto;
   text-align: center;
   display: flex;
   align-items: center;
 }
 
+.load {
+  height: 100vh;
+  justify-content: center;
+}
+
 .loading {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: auto;
 }
 
 @media only screen and (max-width: 768px) {
@@ -116,6 +119,8 @@ tr td:nth-child(2) {
 
 .loader {
   color: #ffffff;
+  left: 30%;
+  bottom: 20px;
   font-size: 45px;
   text-indent: -9999em;
   overflow: hidden;
@@ -124,10 +129,10 @@ tr td:nth-child(2) {
   border-radius: 50%;
   position: relative;
   transform: translateZ(0);
-  animation: mltShdSpin 1.7s infinite ease, round 1.7s infinite ease;
+  animation: spintheball 1.7s infinite ease, round 1.7s infinite ease;
 }
 
-@keyframes mltShdSpin {
+@keyframes spintheball {
   0% {
     box-shadow: 0 -0.83em 0 -0.4em,
       0 -0.83em 0 -0.42em, 0 -0.83em 0 -0.44em,
